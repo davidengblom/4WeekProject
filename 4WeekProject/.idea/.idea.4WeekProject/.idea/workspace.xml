@@ -20,7 +20,10 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="70515091-8326-4cd3-b3b2-42ef5fe39693" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/Assets/Scenes/Game.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/Game.unity" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/.idea.4WeekProject/.idea/contentModel.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.4WeekProject/.idea/contentModel.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/.idea.4WeekProject/.idea/indexLayout.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.4WeekProject/.idea/indexLayout.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/.idea.4WeekProject/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.4WeekProject/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/RTSGame/CameraScripts/CameraBehaviour.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/RTSGame/CameraScripts/CameraBehaviour.cs" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -30,12 +33,17 @@
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/.." />
   </component>
+  <component name="HighlightingSettingsPerFile">
+    <setting file="file://$PROJECT_DIR$/Assets/RTSGame/Misc/SelectableBehaviour.cs" root0="FORCE_HIGHLIGHTING" />
+  </component>
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
         <option value="$PROJECT_DIR$/Assets/RTSGame/Camera/CameraBehaviour.cs" />
         <option value="$PROJECT_DIR$/Assets/RTSGame/Camera Scripts/CameraBehaviour.cs" />
+        <option value="$PROJECT_DIR$/Assets/RTSGame/Misc/SelectableBehaviour.cs" />
         <option value="$PROJECT_DIR$/Assets/RTSGame/CameraScripts/CameraBehaviour.cs" />
+        <option value="$PROJECT_DIR$/Assets/RTSGame/Misc/SelectionManager.cs" />
       </list>
     </option>
   </component>
@@ -82,6 +90,7 @@
       <updated>1604491604621</updated>
       <workItem from="1604491615440" duration="17000" />
       <workItem from="1604491677404" duration="4009000" />
+      <workItem from="1604499663837" duration="3869000" />
     </task>
     <servers />
   </component>
@@ -106,9 +115,9 @@
     <option name="CLEAR_INITIAL_COMMIT_MESSAGE" value="true" />
   </component>
   <component name="WindowStateProjectService">
-    <state x="623" y="225" width="672" height="678" key="search.everywhere.popup" timestamp="1604494091371">
+    <state x="623" y="225" width="672" height="678" key="search.everywhere.popup" timestamp="1604502103159">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="623" y="225" width="672" height="678" key="search.everywhere.popup/0.0.1920.1040/-1920.10.1920.1040@0.0.1920.1040" timestamp="1604494091371" />
+    <state x="623" y="225" width="672" height="678" key="search.everywhere.popup/0.0.1920.1040/-1920.10.1920.1040@0.0.1920.1040" timestamp="1604502103159" />
   </component>
 </project>

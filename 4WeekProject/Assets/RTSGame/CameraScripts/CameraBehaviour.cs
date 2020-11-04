@@ -32,7 +32,7 @@ namespace RTSGame.CameraScripts
             Move();
             Zoom();
             Rotate();
-            Reset();
+            //Reset();
         }
 
         private void Move()
@@ -70,18 +70,18 @@ namespace RTSGame.CameraScripts
             }
         }
 
-        private void Reset()
-        {
-            if (Input.GetMouseButtonDown(2))
-            {
-                transform.position = new Vector3(0, 0, 0);
-                _camera.transform.position = new Vector3(0, 20, -17);
-                _camera.transform.rotation = Quaternion.Euler(50, 0, 0);
-                cameraAnchor.position = new Vector3(0, 0, 0);
-                cameraAnchor.rotation = Quaternion.Euler(-45, 0, 0);
-            }
-            
-            //Last Session Here
-        }
+        // private void Reset()
+        // {
+        //     if (Input.GetMouseButtonDown(2))
+        //     {
+        //         transform.position = new Vector3(0, 0, 0);
+        //         _camera.transform.position = new Vector3(0, 20, -17);
+        //         _camera.transform.rotation = Quaternion.Euler(50, 0, 0);
+        //         cameraAnchor.position = new Vector3(0, 0, 0);
+        //         cameraAnchor.rotation = Quaternion.Euler(-45, 0, 0);
+        //     }
+        //     
+        //     //Last Session Here
+        // }
     }
 }
