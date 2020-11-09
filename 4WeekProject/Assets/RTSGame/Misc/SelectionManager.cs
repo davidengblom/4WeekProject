@@ -1,11 +1,15 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.Linq;
+using RTSGame.Units;
 using UnityEngine;
 
 namespace RTSGame.Misc
 {
     public class SelectionManager : MonoBehaviour
     {
+        public UnitInfo info;
+        
         public Texture topLeftBorder, bottomLeftBorder, topRightBorder, bottomRightBorder;
 
         private Texture2D _borderTexture;
@@ -27,7 +31,8 @@ namespace RTSGame.Misc
         private Vector3 _mousePosition1;
         
         public static List<SelectableBehaviour> Selectables = new List<SelectableBehaviour>();
-        private List<int> _selectedObjects = new List<int>();
+        public List<int> _selectedObjects = new List<int>();
+        public List<GameObject> Selected = new List<GameObject>();
         
         private void Awake()
         {
@@ -48,13 +53,22 @@ namespace RTSGame.Misc
 
             if (_selectionStarted)
             {
+                //Unoptimized
+                foreach (var t in Selectables.Where(t => t.GetComponent<UnitInfo>() != null))
+                {
+                    t.GetComponent<UnitInfo>().state = UnitState.Unselected;
+                }
                 _selectedObjects.Clear();
+                Selected.Clear();
                 for (var i = 0; i < Selectables.Count; i++)
                 {
                     var viewportBounds = GetViewportBounds(_cam, _mousePosition1, Input.mousePosition);
                     if (viewportBounds.Contains(_cam.WorldToViewportPoint(Selectables[i].transform.position)))
                     {
                         _selectedObjects.Add(i);
+                        Selected.Add(Selectables[i].gameObject);
+                        //Unoptimized
+                        Selectables[i].GetComponent<UnitInfo>().state = UnitState.Selected;
                     }
                 }
             }
