@@ -6685,6 +6685,9 @@ GameObject:
   - component: {fileID: 7032583207392410942}
   - component: {fileID: 7032583207392410943}
   - component: {fileID: 7032583207392410928}
+  - component: {fileID: 844326018}
+  - component: {fileID: 844326011}
+  - component: {fileID: 844326013}
   m_Layer: 0
   m_Name: HS_Turret
   m_TagString: Untagged
@@ -6699,7 +6702,7 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 7032583207392410929}
-  m_LocalRotation: {x: -0, y: 0.0000004917383, z: -0, w: 1}
+  m_LocalRotation: {x: -0, y: 0.00000092387205, z: -0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: -0.5}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
@@ -7709,6 +7712,58 @@ MeshCollider:
   m_Convex: 0
   m_CookingOptions: 30
   m_Mesh: {fileID: 0}
+--- !u!111 &844326018
+Animation:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7032583207392410929}
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Animation: {fileID: 7400000, guid: b3d63f4d75b57d74b908ecbaee53aac7, type: 2}
+  m_Animations:
+  - {fileID: 7400000, guid: b3d63f4d75b57d74b908ecbaee53aac7, type: 2}
+  m_WrapMode: 0
+  m_PlayAutomatically: 0
+  m_AnimatePhysics: 0
+  m_CullingType: 0
+--- !u!95 &844326011
+Animator:
+  serializedVersion: 3
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7032583207392410929}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: 5367fc9fb77400140acab618024f2761, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorControllerStateOnDisable: 0
+--- !u!114 &844326013
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7032583207392410929}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e8f211184c0b7604d969d04e5e63458a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  activeOnAwake: 0
+  loop: 0
+  anim: {fileID: 844326018}
+  animClip: {fileID: 7400000, guid: b3d63f4d75b57d74b908ecbaee53aac7, type: 2}
+  animator: {fileID: 844326011}
 --- !u!1 &7032583207541364213
 GameObject:
   m_ObjectHideFlags: 0
