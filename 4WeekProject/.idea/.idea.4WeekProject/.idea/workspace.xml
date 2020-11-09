@@ -23,7 +23,10 @@
       <change beforePath="$PROJECT_DIR$/.idea/.idea.4WeekProject/.idea/contentModel.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.4WeekProject/.idea/contentModel.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/.idea.4WeekProject/.idea/indexLayout.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.4WeekProject/.idea/indexLayout.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/.idea.4WeekProject/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.4WeekProject/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/RTSGame/CameraScripts/CameraBehaviour.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/RTSGame/CameraScripts/CameraBehaviour.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/RTSGame/Misc/SelectionManager.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/RTSGame/Misc/SelectionManager.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scenes/Game.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/Game.unity" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ProjectSettings/Packages/com.unity.probuilder/Settings.json" beforeDir="false" afterPath="$PROJECT_DIR$/ProjectSettings/Packages/com.unity.probuilder/Settings.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ProjectSettings/TagManager.asset" beforeDir="false" afterPath="$PROJECT_DIR$/ProjectSettings/TagManager.asset" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -34,6 +37,9 @@
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/.." />
   </component>
   <component name="HighlightingSettingsPerFile">
+    <setting file="file://$PROJECT_DIR$/Assets/RTSGame/Units/UnitMovement.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/../../2DGame/ProjectGurra/Assets/Resources/Scripts/Characters/Player/PlayerAnimation.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/../../2DGame/ProjectGurra/Assets/Resources/Scripts/Characters/Player/PlayerController.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/RTSGame/Misc/SelectableBehaviour.cs" root0="FORCE_HIGHLIGHTING" />
   </component>
   <component name="IdeDocumentHistory">
@@ -41,9 +47,11 @@
       <list>
         <option value="$PROJECT_DIR$/Assets/RTSGame/Camera/CameraBehaviour.cs" />
         <option value="$PROJECT_DIR$/Assets/RTSGame/Camera Scripts/CameraBehaviour.cs" />
-        <option value="$PROJECT_DIR$/Assets/RTSGame/Misc/SelectableBehaviour.cs" />
         <option value="$PROJECT_DIR$/Assets/RTSGame/CameraScripts/CameraBehaviour.cs" />
+        <option value="$PROJECT_DIR$/Assets/RTSGame/Units/UnitInfo.cs" />
+        <option value="$PROJECT_DIR$/Assets/RTSGame/Misc/SelectableBehaviour.cs" />
         <option value="$PROJECT_DIR$/Assets/RTSGame/Misc/SelectionManager.cs" />
+        <option value="$PROJECT_DIR$/Assets/RTSGame/Units/UnitMovement.cs" />
       </list>
     </option>
   </component>
@@ -91,6 +99,10 @@
       <workItem from="1604491615440" duration="17000" />
       <workItem from="1604491677404" duration="4009000" />
       <workItem from="1604499663837" duration="3869000" />
+      <workItem from="1604582069629" duration="3509000" />
+      <workItem from="1604667874388" duration="3793000" />
+      <workItem from="1604911348285" duration="4791000" />
+      <workItem from="1604927511462" duration="3789000" />
     </task>
     <servers />
   </component>
@@ -115,9 +127,13 @@
     <option name="CLEAR_INITIAL_COMMIT_MESSAGE" value="true" />
   </component>
   <component name="WindowStateProjectService">
-    <state x="623" y="225" width="672" height="678" key="search.everywhere.popup" timestamp="1604502103159">
+    <state width="498" height="446" key="SwitcherDM" timestamp="1604671585915">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="623" y="225" width="672" height="678" key="search.everywhere.popup/0.0.1920.1040/-1920.10.1920.1040@0.0.1920.1040" timestamp="1604502103159" />
+    <state width="498" height="446" key="SwitcherDM/0.0.1920.1040/-1920.10.1920.1040@0.0.1920.1040" timestamp="1604671585915" />
+    <state x="623" y="225" width="672" height="678" key="search.everywhere.popup" timestamp="1604912377486">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="623" y="225" width="672" height="678" key="search.everywhere.popup/0.0.1920.1040/-1920.10.1920.1040@0.0.1920.1040" timestamp="1604912377486" />
   </component>
 </project>
