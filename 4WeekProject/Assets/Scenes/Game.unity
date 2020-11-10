@@ -3040,10 +3040,10 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   info: {fileID: 265950482}
-  topLeftBorder: {fileID: 10910, guid: 0000000000000000f000000000000000, type: 0}
-  bottomLeftBorder: {fileID: 10910, guid: 0000000000000000f000000000000000, type: 0}
-  topRightBorder: {fileID: 10910, guid: 0000000000000000f000000000000000, type: 0}
-  bottomRightBorder: {fileID: 10910, guid: 0000000000000000f000000000000000, type: 0}
+  topLeftBorder: {fileID: 2800000, guid: 8c0d8676d82276645b9246c7df839ca0, type: 3}
+  bottomLeftBorder: {fileID: 2800000, guid: 8cb5b9789a863454f854667c51192b95, type: 3}
+  topRightBorder: {fileID: 2800000, guid: bf8fb3387aefa5846afd5ce1610e20e9, type: 3}
+  bottomRightBorder: {fileID: 2800000, guid: 292bc8507ac2e6e498e06493a37c50c9, type: 3}
   _selectedObjects: 
   Selected: []
 --- !u!1 &1827422413
