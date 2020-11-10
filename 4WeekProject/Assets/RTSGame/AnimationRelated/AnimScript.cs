@@ -10,21 +10,6 @@ public class AnimScript : MonoBehaviour
     public Animation anim;
     public AnimationClip animClip;
     public Animator animator;
-    private void Start()
-    {
-        if (loop)
-        {
-            animator.SetBool("loop", true);
-        }
-        if (activeOnAwake)
-        {
-            animator.SetBool("onAwake", true);
-        }
-        else
-        {
-            animator.SetBool("onAwake", false);
-        }
-    }
     private void Update()
     {
         if (Input.GetKeyDown(KeyCode.E)){
