@@ -18,7 +18,7 @@ public class AnimScript : MonoBehaviour
     }
     public void PlayAnimation()
     {
-        animator.SetTrigger("active");
+        PlayAnimationOnce();
     }
     public IEnumerator PlayAnimationOnce()
     {
