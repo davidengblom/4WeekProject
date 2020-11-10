@@ -14,7 +14,6 @@ namespace RTSGame.Units
         
         public int damage;
         
-        public float moveSpeed;
         public float attackSpeed;
         
         public float range;

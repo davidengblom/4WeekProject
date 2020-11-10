@@ -55,7 +55,6 @@ namespace RTSGame.Units
             {
                 _agent.destination = hit.point + _startVector;
             }
-                
         }
 
         private Vector3 GetCenter()
