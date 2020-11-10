@@ -1871,6 +1871,8 @@ GameObject:
   m_Component:
   - component: {fileID: 1897848432760575387}
   - component: {fileID: 8151603563240315662}
+  - component: {fileID: 407843069}
+  - component: {fileID: 407843068}
   m_Layer: 0
   m_Name: Rocket_Prefab
   m_TagString: Untagged
@@ -1918,6 +1920,38 @@ Animator:
   m_HasTransformHierarchy: 1
   m_AllowConstantClipSamplingOptimization: 1
   m_KeepAnimatorControllerStateOnDisable: 0
+--- !u!111 &407843069
+Animation:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3857500246092039763}
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Animation: {fileID: 7400000, guid: 5a8358d9728be4d4eb09280c33c0d81e, type: 2}
+  m_Animations: []
+  m_WrapMode: 0
+  m_PlayAutomatically: 1
+  m_AnimatePhysics: 0
+  m_CullingType: 0
+--- !u!114 &407843068
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3857500246092039763}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e8f211184c0b7604d969d04e5e63458a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  activeOnAwake: 1
+  loop: 0
+  anim: {fileID: 407843069}
+  animClip: {fileID: 7400000, guid: 5a8358d9728be4d4eb09280c33c0d81e, type: 2}
+  animator: {fileID: 8151603563240315662}
 --- !u!1 &4087420187009633745
 GameObject:
   m_ObjectHideFlags: 0
