@@ -10,11 +10,8 @@ public class AnimScript : MonoBehaviour
     public Animation anim;
     public AnimationClip animClip;
     public Animator animator;
-    private string animName;
-
     private void Start()
     {
-        animName = anim.clip.ToString();
         if (loop)
         {
             animator.SetBool("loop", true);
@@ -34,16 +31,14 @@ public class AnimScript : MonoBehaviour
             StartCoroutine(PlayAnimationOnce());
         }
     }
-    public void PlayAnimation(string Name)
+    public void PlayAnimation()
     {
-        animator.SetBool("active", true);
-        animator.Play(Name, 0);
+        animator.SetTrigger("active");
     }
     public IEnumerator PlayAnimationOnce()
     {
-        animator.SetBool("active", true);
-        animator.Play("idle", 0);
+        animator.SetTrigger("active");
         yield return new WaitForSeconds(0.5f);
-        animator.SetBool("active", false);
+        animator.ResetTrigger("active");
     }
 }
