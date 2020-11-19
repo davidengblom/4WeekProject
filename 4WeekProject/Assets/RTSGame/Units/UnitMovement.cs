@@ -41,7 +41,7 @@ namespace RTSGame.Units
         {
             //Make unit faster if further away from target destination **
 
-            if (Input.GetMouseButton(2) && _info.state == UnitState.Selected)
+            if (Input.GetMouseButton(1) && _info.state == UnitState.Selected)
             {
                 _startVector = transform.position - GetCenter();
                 SetDestination();

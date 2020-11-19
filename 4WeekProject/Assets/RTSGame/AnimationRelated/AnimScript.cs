@@ -10,15 +10,9 @@ public class AnimScript : MonoBehaviour
     public Animation anim;
     public AnimationClip animClip;
     public Animator animator;
-    private void Update()
-    {
-        if (Input.GetKeyDown(KeyCode.E)){
-            StartCoroutine(PlayAnimationOnce());
-        }
-    }
     public void PlayAnimation()
     {
-        PlayAnimationOnce();
+        StartCoroutine(PlayAnimationOnce());
     }
     public IEnumerator PlayAnimationOnce()
     {

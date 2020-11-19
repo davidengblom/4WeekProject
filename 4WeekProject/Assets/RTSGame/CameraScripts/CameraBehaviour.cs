@@ -59,12 +59,12 @@ namespace RTSGame.CameraScripts
 
         private void Rotate()
         {
-            if (Input.GetMouseButton(1))
+            if (Input.GetMouseButton(2))
             {
                 Cursor.lockState = CursorLockMode.Locked;
                 _camera.transform.RotateAround(transform.position, Vector3.up, Input.GetAxis("Mouse X") * rotateSpeed);
             }
-            else if (!Input.GetMouseButton(1))
+            else if (!Input.GetMouseButton(2))
             {
                 Cursor.lockState = CursorLockMode.None;
             }
