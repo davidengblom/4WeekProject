@@ -14,6 +14,13 @@ public class AnimScript : MonoBehaviour
     {
         StartCoroutine(PlayAnimationOnce());
     }
+    public void Update()
+    {
+        if (GetComponent<NewUnitAttack>().playAnim)
+        {
+            PlayAnimation();
+        }
+    }
     public IEnumerator PlayAnimationOnce()
     {
         animator.SetTrigger("active");

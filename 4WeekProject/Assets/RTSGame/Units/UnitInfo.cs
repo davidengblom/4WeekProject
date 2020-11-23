@@ -10,7 +10,7 @@ namespace RTSGame.Units
         
         [Header("Unit Stats")]
         public int maxHealth = 100;
-        private int _currentHealth;
+        public int _currentHealth;
         
         public int damage;
         
@@ -21,21 +21,20 @@ namespace RTSGame.Units
 
         internal Camera Cam;
 
+        private void Awake()
+        {
+            _currentHealth = maxHealth;
+        }
         private void Start()
         {
             Cam = Camera.main;
         }
-
         public void TakeDamage(int dmg)
         {
-            switch (_currentHealth - dmg <= 0)
+            _currentHealth -= dmg;
+            if(_currentHealth <= 0)
             {
-                case true:
-                    //die
-                    break;
-                case false:
-                    _currentHealth -= dmg;
-                    break;
+                Destroy(gameObject);
             }
         }
     }

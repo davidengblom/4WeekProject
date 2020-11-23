@@ -2,20 +2,23 @@
 using System.Collections.Generic;
 using UnityEngine;
 using RTSGame.Units;
-using System;
 
-public class UnitAttack : UnitInfo
+public class NewUnitAttack : MonoBehaviour
 {
-    public AnimScript animScript;
     public Collider[] objectsInRange; // this array checks for all objects around this game object
-    new public List<GameObject> targetList;
-    public GameObject[] targets; // this array will contain targets that will be attacked
+    public List<GameObject> targetList;
     [SerializeField]
     private string otherTeam;
     public GameObject target;
     private Vector3 relativePos;
     public bool playAnim;
-    private Transform initalRot;
+
+
+    public int range;
+    public float attackSpeed;
+    public int damage;
+    public GameObject casingPref;
+    public GameObject casingExit;
 
     private float startShootCD;
     private void Update()
@@ -24,10 +27,6 @@ public class UnitAttack : UnitInfo
         SetTarget();
         LookTowardsTarget();
         AttackTarget();
-    }
-    private void Awake()
-    {
-        initalRot.rotation = transform.rotation;
     }
     private void FindTargets()
     {
@@ -45,7 +44,6 @@ public class UnitAttack : UnitInfo
     }
     private void SetTarget()
     {
-
         target = targetList[targetList.Count - targetList.Count];
         if (target == null)
         {
@@ -64,27 +62,26 @@ public class UnitAttack : UnitInfo
         {
             target = null;
         }
-        if (target == null)
-        {
-            transform.rotation = initalRot.rotation;
-        }
     }
     private void AttackTarget()
     {
-        if(Time.time >= startShootCD + attackSpeed)
+        if (Time.time >= startShootCD + attackSpeed)
         {
             startShootCD = Time.time;
             StartCoroutine(TriggerAnim());
-            if(target != null)
+            if (target != null)
             {
                 target.GetComponent<UnitInfo>().TakeDamage(damage);
             }
+            else return;
         }
     }
 
     IEnumerator TriggerAnim()
     {
         playAnim = true;
+        Instantiate(casingPref, new Vector3(casingExit.transform.position.x, casingExit.transform.position.y, casingExit.transform.position.z), Quaternion.Euler(0.0f, 0.0f, Random.Range(0.0f, 360.0f)), null);
+        casingPref.GetComponent<CasingBehaviour>().casingExit = casingExit;
         yield return new WaitForSeconds(0.5f);
         playAnim = false;
     }
